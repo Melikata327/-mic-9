@@ -13,10 +13,10 @@
 وصل می کنیم 5 
 قسمت کد :
 ```cpp
-#define  key 1 digitalRead (A0)
+#define  key 1 digitalRead (A0) // تعریف کلید 
 void setup() {
  pinMode(A0,INPUT);
-    for (int a = 1 ; a<=5;a++){
+    for (int a = 1 ; a<=5;a++){   // // تنظیم کردن پایه خروجی همه دیودها
  pinMode(a,OUTPUT);  
   }
   void loop() {
@@ -28,15 +28,15 @@ void setup() {
   {0,0,0,1,0},
   {0,0,0,0,1}
  };
-   if(key == 0)"{
+   if(key == 0)"{ // اجرای شرط
   
-    for(int a = 0; a<=5; a++){
+    for(int a = 0; a<=5; a++){ // // جلو رفتن ردیف به ردیف آرایه
 
-       for(int b = 0; b<=4; b++){
+       for(int b = 0; b<=4; b++){ // // جلو رفتن ستون به ستون آرایه
       
-       digitalwrite( b, dancing light [a] [b]);
+       digitalwrite( b, dancing light [a] [b]);  //// در هر گام، وضعیت را برای یک دیود تعیین میکنیم و بعد به سراغ دیود بعدی می رویم
    
-       delay(50);
+       delay(50); //تاخیر نیم ثانیه ای 
      
        } 
      }
